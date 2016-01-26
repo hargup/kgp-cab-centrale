@@ -21,4 +21,6 @@ from go import views
 urlpatterns = [
     url(r'^$', views.index, name="index"),
     url(r'^admin/', admin.site.urls),
+    url(r'^add/', views.add, name="index"),
+    url(r'^query/', views.query, name="index"),
 ]
