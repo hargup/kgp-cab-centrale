@@ -1,0 +1,52 @@
+{% load staticfiles %}
+<!DOCTYPE html>
+<head>
+    <title>KGP Cab Centrale</title>
+    <meta charset="utf-8" />
+    <script type="text/javascript" src="{% static "js/jquery-2.1.4.min.js" %}"></script>
+    <script type="text/javascript" src="{% static "js/materialize.min.js" %}"></script>
+    <script type="text/javascript" src="{% static "js/picker.js" %}"></script>
+    <script type="text/javascript" src="{% static "js/picker.date.js" %}"></script>
+    <script type="text/javascript" src="{% static "js/picker.time.js" %}"></script>
+    <link href="http://code.jquery.com/ui/1.10.4/themes/ui-lightness/jquery-ui.css" rel="stylesheet">
+    <script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+    <script src="http://code.jquery.com/ui/1.10.4/jquery-ui.js"></script>
+    <link type="text/css" rel="stylesheet" href="{% static "css/datepicker.min.css" %}"/>
+    <link type="text/css" rel="stylesheet" href="{% static "css/materialize.min.css" %}" media="screen, projection" />
+    <link type="text/css" rel="stylesheet" href="{% static "css/style.css" %}"/>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <script>
+            $(function() {
+                $( "#datepicker-1" ).datepicker();
+            });
+    </script>
+</head>
+
+<div class="row">
+    <form class="col s12">
+      <div class="row">
+        <div class="input-field col s6">
+          <i class="material-icons prefix">account_circle</i>
+          <input id="icon_prefix" type="text" class="validate">
+          <label for="icon_prefix">Name</label>
+        </div>
+      </div>
+      <div class="row">
+        <div class="input-field col s6">
+          <i class="material-icons prefix">phone</i>
+          <input id="icon_telephone" type="tel" class="validate">
+          <label for="icon_telephone">Telephone</label>
+        </div>
+      </div>
+      <div class="row">
+        <div class="input-field col s6">
+          <i class="material-icons prefix">today</i>
+          <input id="datepicker-1" type="text">
+          <label for="datepicker-1">Date</label>
+        </div>
+      </div>
+    </form>
+</div>
+
+
+</body>
